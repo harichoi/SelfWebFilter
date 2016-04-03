@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/outLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/key"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF464646"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="key"
+                />
+
+            <TextView
+                android:text="On/off"
+                android:id="@+id/value"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/delay"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delay Time : "
+                />
+            <TextView
+                android:id="@+id/explain"
+                android:text="This permission is..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:focusable="false"
+                android:text="Edit" />
+            <Button
+                android:id="@+id/time_edit_button"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:focusable="false"
+                android:text="Time Edit" />
+            <Button
+                android:id="@+id/lock_button"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:focusable="false" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

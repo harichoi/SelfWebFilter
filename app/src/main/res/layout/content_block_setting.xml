@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_block_setting"
+    tools:context="kr.selfcontrol.selfwebfilter.setting.BlockSettingActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/bottom_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/out_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/key"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#FF464646"
+                        android:shadowDx="1.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="key"
+                        />
+
+                    <TextView
+                        android:text="On/off"
+                        android:id="@+id/value"
+                        android:paddingLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/delay"
+                        android:paddingLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delay Time : "
+                        />
+                    <TextView
+                        android:id="@+id/explain"
+                        android:text="This permission is..."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edit_button"
+                        android:layout_width="100dip"
+                        android:layout_height="50dip"
+                        android:focusable="false"
+                        android:text="Edit" />
+                    <Button
+                        android:id="@+id/time_edit_button"
+                        android:layout_width="100dip"
+                        android:layout_height="50dip"
+                        android:focusable="false"
+                        android:text="Time Edit" />
+                    <Button
+                        android:id="@+id/lock_button"
+                        android:layout_width="100dip"
+                        android:layout_height="50dip"
+                        android:focusable="false" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/bottom_area"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:background="#ffffffff"
+        android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/text"
+            android:paddingRight="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/block_button"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Add" />
+    </RelativeLayout>
+</RelativeLayout>

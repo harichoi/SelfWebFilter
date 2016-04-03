@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/go_tab"
+        android:scaleType="fitXY"
+        android:layout_width="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_height="200dp" />
+    <TextView
+        android:id="@+id/internet_title"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/go_tab"
+        android:layout_height="wrap_content"
+        android:text="ListView"
+        />
+    <Button
+        android:id="@+id/del_tab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:text="X"
+        />
+</RelativeLayout>
